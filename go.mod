@@ -3,7 +3,6 @@ module github.com/ramme-foundation/go-jackbot
 go 1.19
 
 require (
-	github.com/aws/aws-lambda-go v1.36.1
 	github.com/dustin/go-humanize v1.0.0
 	github.com/gin-contrib/zap v0.1.0
 	github.com/gin-gonic/gin v1.8.2
