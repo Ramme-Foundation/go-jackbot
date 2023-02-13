@@ -3,8 +3,8 @@ package controller
 import (
 	"context"
 	"fmt"
-	"github.com/ramme-foundation/go-jackbot/internal/utils"
-	"github.com/ramme-foundation/go-jackbot/prisma/db"
+	"go-jackbot/internal/utils"
+	"go-jackbot/prisma/db"
 	"sort"
 	"time"
 )

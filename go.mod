@@ -1,4 +1,4 @@
-module github.com/ramme-foundation/go-jackbot
+module go-jackbot
 
 go 1.19
 

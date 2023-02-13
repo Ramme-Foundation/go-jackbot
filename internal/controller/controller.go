@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ramme-foundation/go-jackbot/prisma/db"
 	"github.com/slack-go/slack"
+	"go-jackbot/prisma/db"
 	"net/http"
 	"strings"
 )

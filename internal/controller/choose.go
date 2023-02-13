@@ -3,9 +3,9 @@ package controller
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/ramme-foundation/go-jackbot/internal/utils"
-	"github.com/ramme-foundation/go-jackbot/prisma/db"
 	"github.com/slack-go/slack"
+	"go-jackbot/internal/utils"
+	"go-jackbot/prisma/db"
 	"net/http"
 	"strconv"
 	"strings"
