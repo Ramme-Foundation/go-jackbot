@@ -1,6 +1,7 @@
 # flyctl launch added from .gitignore
 **/.idea
-
+vendor
+.env
 # Created by https://www.toptal.com/developers/gitignore/api/goland,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=goland,visualstudiocode
 
