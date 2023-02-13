@@ -10,6 +10,8 @@ jobs:
     steps:
       # This step checks out a copy of your repository.
       - uses: actions/checkout@v2
+      - name: Generate Prisma
+        run: go run github.com/prisma/prisma-client-go generate
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
         env:
