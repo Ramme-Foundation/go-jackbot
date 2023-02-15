@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	ginzap "github.com/gin-contrib/zap"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -43,7 +44,7 @@ func main() {
 		})
 	})
 	r.POST("/command", controller.CommandRoute())
-	err := r.Run(os.Getenv("PORT"))
+	err := r.Run(fmt.Sprintf("0.0.0.0:%s", os.Getenv("PORT")))
 	if err != nil {
 		logger.With(zap.Error(err)).Fatal("failed to start server")
 	}
