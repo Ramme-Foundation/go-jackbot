@@ -8,6 +8,7 @@ import (
 	"go-jackbot/prisma/db"
 	"go.uber.org/zap"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -42,7 +43,7 @@ func main() {
 		})
 	})
 	r.POST("/command", controller.CommandRoute())
-	err := r.Run()
+	err := r.Run(os.Getenv("PORT"))
 	if err != nil {
 		logger.With(zap.Error(err)).Fatal("failed to start server")
 	}
