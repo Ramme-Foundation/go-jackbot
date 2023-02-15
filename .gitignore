@@ -1,4 +1,5 @@
 .idea
+.env
 ngrok
 vendor
 ngrok.zip

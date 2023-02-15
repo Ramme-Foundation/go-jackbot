@@ -1,6 +1,7 @@
 # flyctl launch added from .gitignore
 **/.idea
 vendor
+prisma/db
 
 .env
 
